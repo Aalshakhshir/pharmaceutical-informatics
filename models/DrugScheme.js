@@ -1,6 +1,6 @@
 const graphql = require('graphql')
 
-const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLList } = graphql
+const { GraphQLObjectType, GraphQLString, GraphQLID, GraphQLSchema, GraphQLList } = graphql
 const data = require('../assets/dataset.json').drugs;
 
 
@@ -18,9 +18,9 @@ const DrugType = new GraphQLObjectType({
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
     fields: {
-        Drug: {
+        Drugs: {
             type: new GraphQLList(DrugType),
-            args: { id: { type: GraphQLString }, name: { type: GraphQLString }, diseaseName: { type: GraphQLString } },
+            args: { id: { type: GraphQLID }, name: { type: GraphQLString }, diseaseName: { type: GraphQLString } },
             resolve(parent, args) {
                 if (args.id) {
                     return data?.filter(drug => drug?.id === args.id)
@@ -30,6 +30,15 @@ const RootQuery = new GraphQLObjectType({
                 }
                 if (args.diseaseName) {
                     return data.filter(i => i.diseases.join("").includes(args.diseaseName.toLowerCase()))
+                }
+            }
+        },
+        Diseases: {
+            type: GraphQLString,
+            args: { name: { type: GraphQLString }},
+            resolve(parent, args) {
+                if (args.name) {
+                    return data.map(drug => drug.diseases).filter(i => i.join("").includes(args.name.toLowerCase())).join(", ")
                 }
             }
         }
