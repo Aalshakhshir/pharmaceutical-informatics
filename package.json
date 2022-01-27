@@ -1,0 +1,32 @@
+{
+  "name": "pharmaceutical-informatics",
+  "version": "1.0.0",
+  "description": "Pharmaceutical digital tool for medicine research",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aalshakhshir/pharmaceutical-informatics.git"
+  },
+  "keywords": [
+    "Pharmaceuticals",
+    "medicine",
+    "diseasses",
+    "temedica"
+  ],
+  "author": "Abdelrahman AlShakhshir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aalshakhshir/pharmaceutical-informatics/issues"
+  },
+  "homepage": "https://github.com/Aalshakhshir/pharmaceutical-informatics#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.3.0"
+  }
+}
