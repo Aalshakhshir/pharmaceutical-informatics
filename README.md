@@ -27,3 +27,10 @@ cd client && pod install (IOS Only) && yarn ios/android (make sure you have reac
 
 # Usage
 Search for any term to retrieve drug information , you can search by drug name/description and list of diseases that the drug induce
+
+## testing
+
+# Server GraphQL tests are under app.test.js
+running using node test (make sure server is running)
+
+
