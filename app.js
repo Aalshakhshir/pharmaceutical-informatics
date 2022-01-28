@@ -1,6 +1,6 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
-const { schema } = require('./models/DrugScheme')
+const { schema } = require('./Scehems/DrugScheme')
 const cors = require('cors');
 const path  = require('path');
 require('dotenv').config({path: './.env'});

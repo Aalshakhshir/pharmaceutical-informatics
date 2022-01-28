@@ -12,15 +12,18 @@ import {
   StyleSheet,
   useColorScheme,
 } from 'react-native';
+import { ApolloProvder } from '@apollo/client'
+
 import Header from './shared/Header';
 
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
+import client from './graphql/Apollo';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
-
+  const apolloClient = client;
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
     height: '100%',
@@ -28,10 +31,11 @@ const App = () => {
     justifyContent: 'center',
     alignItems: 'center',
   };
-
   return (
     <SafeAreaView style={backgroundStyle}>
-      <Header app="mobile" />
+      <ApolloProvder client={apolloClient}>
+        <Header app="mobile" />
+      </ApolloProvder>
     </SafeAreaView>
   );
 };
