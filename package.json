@@ -4,7 +4,7 @@
   "description": "Pharmaceutical digital tool for medicine research",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha ./app.test.js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,14 @@
   },
   "homepage": "https://github.com/Aalshakhshir/pharmaceutical-informatics#readme",
   "dependencies": {
+    "chai": "^4.3.6",
     "cors": "^2.8.5",
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "express-graphql": "^0.12.0",
-    "graphql": "^16.3.0"
+    "graphql": "^16.3.0",
+    "mocha": "^9.2.0",
+    "should": "^13.2.3",
+    "supertest": "^6.2.2"
   }
 }

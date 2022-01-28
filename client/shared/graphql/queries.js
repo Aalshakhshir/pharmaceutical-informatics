@@ -1,7 +1,7 @@
-import { gql } from '@apollo/client'
+import {gql} from '@apollo/client';
 
-export const DrugsQuery = (searchTerm) => {
-return gql`
+export const DrugsQuery = searchTerm => {
+  return gql`
 {
   Drugs(name: "${searchTerm}") {
     name,
@@ -10,5 +10,5 @@ return gql`
     description,
     released
   }
-}
-`}
+}`;
+};
