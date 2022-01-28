@@ -14,13 +14,19 @@ import {
 } from 'react-native';
 import Header from './shared/Header';
 
-
+import {
+  Colors,
+} from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    height: '100%',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   };
 
   return (

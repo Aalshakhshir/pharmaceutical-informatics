@@ -61218,8 +61218,9 @@ var styles = _reactNative.StyleSheet.create({
   }
 });
 
-var Header = function Header() {
-  return /*#__PURE__*/_react.default.createElement(_reactNative.View, null, /*#__PURE__*/_react.default.createElement(_reactNative.Text, null, "Hello RN from web"));
+var Header = function Header(_ref) {
+  var app = _ref.app;
+  return /*#__PURE__*/_react.default.createElement(_reactNative.View, null, /*#__PURE__*/_react.default.createElement(_reactNative.Text, null, "Hello RN from the ", app, " app"));
 };
 
 var _default = Header;
@@ -61295,7 +61296,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49727" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55057" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
