@@ -7,7 +7,7 @@
  starting the server on any port please update the .env file to include your port (default is 4000 if no port was specified)
  to start server node app OR nodemon app (if nodemon is installed globally)
 
-# Client side can be server side rendered by opening the client directory and make a static public files build using (yarn build on the react app)
+Client side can be server side rendered by opening the client directory and make a static public files build using (yarn build on the react app)
  serving static frontend files is handled in the server application using a middleware
 
  open https://localhost:3001 or specified port in your browser.
