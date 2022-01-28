@@ -1,27 +1,17 @@
 import React from 'react';
 import client from './shared/graphql/Apollo';
-import Header from './shared/Header';
-import { ApolloProvider } from '@apollo/client'
-
-const WebAppTitle = () => {
-    return (
-        <div>
-            <h2 style={{ color: '#9400d3', fontSize: '32' }}>
-                I'm a React app component.
-            </h2>
-        </div>
-    );
-};
+import {ApolloProvider} from '@apollo/client';
+import {Home} from '../shared/Home';
 
 const App = () => {
-    const apolloClient = client;
+  // Web Apollo client instance
+  const apolloClient = client;
 
-    return (
-        <ApolloProvider client={apolloClient}>
-            <WebAppTitle />
-            <Header app="web" />
-        </ApolloProvider>
-    );
+  return (
+    <ApolloProvider client={apolloClient}>
+      <Home app="web" />
+    </ApolloProvider>
+  );
 };
 
 export default App;

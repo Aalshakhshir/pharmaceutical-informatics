@@ -6,8 +6,9 @@ return gql`
   Drugs(name: "${searchTerm}") {
     name,
     diseases,
-    id
-    
+    id,
+    description,
+    released
   }
 }
 `}

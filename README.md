@@ -13,13 +13,13 @@ Client side can be server side rendered by opening the client directory and make
  open https://localhost:3001 or specified port in your browser.
 
 ## GraphQL (Express)
- To test queries and/or mutations , please use graphiql (enabled by default) at localhost://{{ PORT NUBMER}}/graphql
+ To test queries and/or mutations (API Docs) , please use graphiql (enabled by default) at localhost://{{ PORT NUBMER}}/graphql
 
 Cancel changes
 
-# Client (crafted using react native application which works on web as well by using react-native-web library)
+# Client (crafted using react native application which works on web as well by using react-native-web library/ shared folder is a system link inside /web directory from outter scope dir)
 
- To run web locally
+ To run web locally 
  cd client && cd web && yarn start then open localhost:1234
 
 # to run mobile app:
