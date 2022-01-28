@@ -24,3 +24,7 @@
 
 ## to run mobile app:
 # cd client && pod install (IOS Only) && yarn ios/android (make sure you have react native development environment setup) https://reactnative.dev/docs/environment-setup
+
+## Usage
+
+# Search for any term to retrieve drug information , you can search by drug name/description and list of diseases that the drug induce
