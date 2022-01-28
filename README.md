@@ -23,4 +23,4 @@
 # cd client && cd web && yarn start
 
 ## to run mobile app:
-# cd client && yarn ios/android (make sure you have react native development environment setup) https://reactnative.dev/docs/environment-setup
+# cd client && pod install (IOS Only) && yarn ios/android (make sure you have react native development environment setup) https://reactnative.dev/docs/environment-setup
