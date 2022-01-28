@@ -61248,7 +61248,9 @@ var WebAppTitle = function WebAppTitle() {
 };
 
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(WebAppTitle, null), /*#__PURE__*/_react.default.createElement(_Header.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(WebAppTitle, null), /*#__PURE__*/_react.default.createElement(_Header.default, {
+    app: "web"
+  }));
 };
 
 var _default = App;

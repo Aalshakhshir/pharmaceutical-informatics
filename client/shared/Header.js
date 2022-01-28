@@ -14,10 +14,10 @@ const styles = StyleSheet.create({
   }
 });
 
-const Header = () => {
+const Header = ({ app }) => {
   return (
     <View>
-      <Text>Hello RN from web</Text>
+      <Text>Hello RN from the {app} app</Text>
     </View>
   );
 };

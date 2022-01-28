@@ -20,7 +20,7 @@
 ## Client (crafted using react native application which works on web as well by using react-native-web library)
 
 ## To run web locally
-# cd client && cd web && yarn start
+# cd client && cd web && yarn start then open localhost:1234
 
 ## to run mobile app:
 # cd client && pod install (IOS Only) && yarn ios/android (make sure you have react native development environment setup) https://reactnative.dev/docs/environment-setup

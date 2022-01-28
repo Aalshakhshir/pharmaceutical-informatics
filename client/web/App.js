@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <WebAppTitle />
-      <Header />
+      <Header app="web" />
     </>
   );
 };
