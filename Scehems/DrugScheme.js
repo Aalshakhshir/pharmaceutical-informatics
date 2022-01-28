@@ -26,7 +26,7 @@ const RootQuery = new GraphQLObjectType({
                 //     return data?.filter(drug => drug?.id === args.id)
                 // }
                 if (args.name) {
-                    return data.filter(i => i.name.toLowerCase().includes(args.name?.toLowerCase()) || i.diseases.join("").includes(args.name.toLowerCase()))
+                    return data.filter(i => i.name.toLowerCase().includes(args.name?.toLowerCase()) || i.diseases.join("").includes(args.name.toLowerCase()) || i?.description?.toLowerCase().includes(args.name.toLowerCase()))
                 }
                 // if (args.diseaseName) {
                 //     return data.filter(i => i.diseases.join("").includes(args.diseaseName.toLowerCase()))
