@@ -1,5 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { DrugsQuery } from './graphql/queries';
+import { useApolloQuery } from './graphql/hooks/useApolloQuery';
+
 
 const styles = StyleSheet.create({
   header: {
@@ -15,6 +18,11 @@ const styles = StyleSheet.create({
 });
 
 const Header = ({ app }) => {
+    const [searchTerm, setSearchValue] = React.useState('')
+    const onChangeText = (text) => {
+        setSearchValue(text)
+    }
+    const { loading, error, data } = useApolloQuery(DrugsQuery('ear'));
   return (
     <View>
       <Text>Hello RN from the {app} app</Text>

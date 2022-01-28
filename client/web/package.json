@@ -13,7 +13,8 @@
     "react-native-web": "^0.17.5"
   },
   "alias": {
-    "react-native": "react-native-web"
+    "react-native": "react-native-web",
+    "react": "./node_modules/react"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"

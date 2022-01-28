@@ -1,5 +1,5 @@
 import React from 'react';
-import client from '../graphql/Apollo';
+import client from './shared/graphql/Apollo';
 import Header from './shared/Header';
 import { ApolloProvider } from '@apollo/client'
 

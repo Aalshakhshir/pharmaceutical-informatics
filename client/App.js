@@ -19,7 +19,7 @@ import Header from './shared/Header';
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
-import client from './graphql/Apollo';
+import client from './shared/graphql/Apollo';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
