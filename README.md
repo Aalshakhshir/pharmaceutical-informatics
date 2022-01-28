@@ -34,3 +34,8 @@ Search for any term to retrieve drug information , you can search by drug name/d
 running using node test (make sure server is running)
 
 
+## Troubleshoot.
+
+Shared on web must be linked if it doesn't exist under web directory using system link
+Make sure you are on /web directory and add the following command
+ln -s /Users/{system username}/path to repo/client/shared
